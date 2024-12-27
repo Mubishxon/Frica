@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="col-md-4">
+                  <div class="box_man">
+                     <a  href="{% url 'bdetail' x.id %}"></a><h3 class="mobile_text">{{x.name}}</h3>
+                     <div class="mobile_img"><img src="{{x.img.url}}"></div>
+                     <div class="cart_main">
+                        <div class="cart_bt"><a href="#">Add To Cart</a></div>
+                        <h4 class="samsung_text">Samsung</h4>
+                        <h6 class="rate_text"><a href="#">$500</a></h6>
+                        <h6 class="rate_text_1">$1000</h6>
+                     </div>
+                  </div>
+               </div>
+
+{% endblock content %}

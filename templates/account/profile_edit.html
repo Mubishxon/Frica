@@ -1,0 +1,7 @@
+<h1> Foydalanuvchi ma'lumotlarini o'zgartirish </h1>
+<p>Siz o'ziz haqizdagi ma'lumotlarni quyidagi formani to'ldirish orqali o'zqartirishingiz mumkin </p>
+<form method="post">{% csrf_token %}
+     {{user_form.as_p}}
+     {{profile_form.as_p}
+    <button type="submit">O`zgarishlarni saqlash</button>
+</form>

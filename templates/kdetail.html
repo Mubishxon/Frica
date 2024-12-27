@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+  <div class="col-md-6">
+                     <a  href="{% url 'kdetail' x.id %}"></a><h1 class="offer_text">{{x.name}}</h1>
+                     <p class="lorem_text">{{x.model}}</p>
+                     <div class="read_bt"><a href="#">{{x.price}}</a></div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="image_3"><img src="{% static 'images/img-3.png' %}"></div>
+                  </div>
+               
+
+{% endblock content %}

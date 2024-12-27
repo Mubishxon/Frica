@@ -1,0 +1,6 @@
+<h1>Foydalanuvchi ma'lumotlarini o`zgartirish</h1>
+<h1>Ro`yhatdan o`tish uchun iltimos ushbu formani to`ldiring</h1>
+<form method="post">{% csrf_token %}
+   {{user_form.as_p }}
+    <button type="submit">Ro`yhatdan o`tkazish</button>
+</form>
